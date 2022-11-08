@@ -14,7 +14,4 @@ app.put('/api/houses/:id', updateHouse)
 app.delete('/api/houses/:id', deleteHouse)
 
 
-
-
-
 app.listen(4004, () => console.log('server is running on port 4004'))

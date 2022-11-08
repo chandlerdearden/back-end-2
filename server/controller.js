@@ -32,7 +32,9 @@ module.exports = {
 
         let index = houses.findIndex(house => house.id === +id)
 
-        if(type === 'plus'){
+        if (houses[index].price <= 0 && type === 'minus'){
+        }
+        else if(type === 'plus'){
             houses[index].price +=10000
         } else if (type === 'minus') {
             houses[index].price -= 10000
